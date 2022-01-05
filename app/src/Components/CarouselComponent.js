@@ -1,4 +1,4 @@
-import { Carousel } from 'react-bootstrap'
+import { Carousel, Container } from 'react-bootstrap'
 import img from '../img.jpg'
 
 import React from 'react'
@@ -6,6 +6,7 @@ import React from 'react'
 export default function CarouselComponent() {
     return (
         <div>
+          <Container>
           <Carousel>
             <Carousel.Item>
               <img
@@ -46,6 +47,8 @@ export default function CarouselComponent() {
             </Carousel.Item>
             
           </Carousel>
+          </Container>
+          
         </div>
     )
 }
