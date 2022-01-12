@@ -1,21 +1,25 @@
-import { Nav } from 'react-bootstrap'
+import { Navbar, Nav, Container } from 'react-bootstrap'
 
 import React from 'react'
 
 export default function NavBar() {
     return (
         <div>
-<Nav justify variant="tabs" defaultActiveKey="/home">
-  <Nav.Item>
-    <Nav.Link href="/home">Home</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="link-1">About Us</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="link-2">Contact</Nav.Link>
-  </Nav.Item>
-</Nav>
+          
+          <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+          <Container>
+            <Navbar.Brand href="#home">Hernandez 5</Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+              <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav className="me-auto">
+                  <Nav.Link href="#aboutus">About Us</Nav.Link>
+                  <Nav.Link href="#contact">Contact</Nav.Link>
+                </Nav>
+                <Nav>
+                </Nav>
+              </Navbar.Collapse>
+          </Container>      
+        </Navbar>
         </div>
     )
 }

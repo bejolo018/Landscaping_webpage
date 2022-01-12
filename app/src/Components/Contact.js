@@ -5,7 +5,7 @@ import { Form, Container } from 'react-bootstrap'
 export default function Contact() {
     return (
         <div>
-            <Container>
+            <Container style={{ marginBottom :'75px'}}>
                 <Form>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                         <Form.Label>Email address</Form.Label>
