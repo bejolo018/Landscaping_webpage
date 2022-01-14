@@ -19,7 +19,7 @@ export default function Contact() {
     }
 
     return (
-        <div>
+        <div className='contact'>
             <Container style={{ marginBottom :'75px'}}>
                 <Form ref={form} onSubmit={sendEmail}>
                     <Form.Group className="mb-3">

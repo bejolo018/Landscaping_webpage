@@ -1,19 +1,20 @@
 import { Navbar, Nav, Container } from 'react-bootstrap'
+import { Link } from 'react-scroll'
+
 
 import React from 'react'
 
 export default function NavBar() {
     return (
         <div>
-          
           <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
-            <Navbar.Brand href="#home">Hernandez 5</Navbar.Brand>
+            <Navbar.Brand>Hernandez 5</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
-                  <Nav.Link href="#aboutus">About Us</Nav.Link>
-                  <Nav.Link href="#contact">Contact</Nav.Link>
+                  <Link to="aboutus" spy={true} smooth={true} duration={250}> <Nav.Link>About Us</Nav.Link> </Link>
+                  <Link to="contact" spy={true} smooth={true} duration={250}><Nav.Link>Contact</Nav.Link> </Link>
                 </Nav>
                 <Nav>
                 </Nav>
