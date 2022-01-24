@@ -5,8 +5,8 @@
 
 .App::after {
     content: "";
-    background: rgb(26, 31, 41) url("./wood.jpg") no-repeat fixed top;
-    filter: brightness(40%);
+    background: rgb(26, 31, 41) url("./Images/wood.jpg") no-repeat fixed top;
+    filter: brightness(50%);
     background-size: cover;
     top: 0;
     left: 0;
