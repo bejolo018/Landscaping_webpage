@@ -4,9 +4,9 @@ import { Container } from 'react-bootstrap'
 export default function AboutUs() {
     return (
         <div className='aboutus'>
-            <Container style={{marginTop: '20px'}}>
-                <h1>About Us</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <Container style={{marginTop: '20px', color: 'white', textShadow: '2px 2px 4px #000000'}}>
+                <h1 style={{textAlign: 'center', padding: '20px'}}>About Us</h1>
+                <h5 style={{ marginBottom: '30px'}}> Industrious, and experienced, Hernandez 5 Group installs fencing for residential and commericial customers in and around the Greater San Antonio area. Our goal is to provide customers with the comfort of knowing that they have knowledgeable, and courteous installers that will provide excellent service and satisfaction. Have any questions? Feel free to reach out to us through phone or email using the information below! </h5>
             </Container>
         </div>
     )

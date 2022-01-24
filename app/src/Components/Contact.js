@@ -20,8 +20,25 @@ export default function Contact() {
 
     return (
         <div className='contact'>
-            <Container style={{ marginBottom :'75px'}}>
-                <Form ref={form} onSubmit={sendEmail}>
+            <Container style={{marginBottom :'75px', color: 'white', textShadow: '2px 2px 4px #000000'}}>
+                <h1 style={{textAlign:'center', padding: '5px'}}> Contact</h1>
+
+                <div>
+                <h2 style={{padding: '5px'}} >Call us: <a href="tel:830-275-6073">830-275-6073</a></h2>
+
+                <h3 style={{padding: '5px'}}>Hours of Operation:</h3>
+                <ul style={{marginLeft: '-26px', fontSize: '24px'}}>
+                    <li style={{listStyle: 'none'}}>Monday: 7:00 AM – 5:00 PM</li>
+                    <li style={{listStyle: 'none'}}>Tuesday: 7:00 AM – 5:00 PM</li> 
+                    <li style={{listStyle: 'none'}}>Wednesday: 7:00 AM – 5:00 PM</li> 
+                    <li style={{listStyle: 'none'}}>Thursday: 7:00 AM – 5:00 PM</li> 
+                    <li style={{listStyle: 'none'}}>Friday: 7:00 AM – 5:00 PM</li> 
+                </ul>
+
+                <h2 style={{ padding: '5px'}}>Email Us:</h2>
+                </div>
+
+                <Form style={{padding: '5px'}} ref={form} onSubmit={sendEmail}>
                     <Form.Group className="mb-3">
                             <Form.Label>Name</Form.Label>
                             <Form.Control type="name" placeholder="Name" name='user_name' />
@@ -31,8 +48,8 @@ export default function Contact() {
                         <Form.Control type="email" placeholder="name@example.com" name='user_email' />
                     </Form.Group>
                     <Form.Group className="mb-3">
-                        <Form.Label>Example textarea</Form.Label>
-                        <Form.Control as="textarea" name='message' rows={3} />
+                        <Form.Label>Message</Form.Label>
+                        <Form.Control as="textarea" name='message' rows={3} placeholder="Message" />
                     </Form.Group>
                     <Button variant="primary" type="submit" value="Send">
                         Submit

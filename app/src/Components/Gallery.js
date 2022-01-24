@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, Button } from 'react-bootstrap'
-import img from '../img.jpg'
+import img from '../Images/img.jpg'
 
 export default function Gallery() {
     return (
