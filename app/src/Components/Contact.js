@@ -24,7 +24,9 @@ export default function Contact() {
                 <h1 style={{textAlign:'center', padding: '5px'}}> Contact</h1>
 
                 <div>
-                <h2 style={{padding: '5px'}} >Call us: <a href="tel:830-275-6073">830-275-6073</a></h2>
+                <h2 style={{padding: '5px'}} >Call us: </h2>
+                <h3 style={{padding: '5px'}}> For English: <a href="tel:210-304-0156">210-304-0156</a></h3>
+                <h3 style={{padding: '5px'}}> Para Español: <a href="tel:830-275-6073">830-275-6073</a></h3>
 
                 <h3 style={{padding: '5px'}}>Hours of Operation:</h3>
                 <ul style={{marginLeft: '-26px', fontSize: '24px'}}>
